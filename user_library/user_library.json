@@ -1,0 +1,30 @@
+[
+    {
+        "author": "Sophocles",
+        "country": "Greece",
+        "imageLink": "images/oedipus-the-king.jpg",
+        "language": "Greek",
+        "link": "https://en.wikipedia.org/wiki/Oedipus_the_King\n",
+        "pages": 88,
+        "title": "Oedipus the King",
+        "year": -430,
+        "uuid": "8df99dcd-4042-40d6-b4d0-2f8615206581",
+        "last_read_page": 21,
+        "percentage_read": 23.863636363636363,
+        "last_read_date": 1694320490.436215
+    },
+    {
+        "author": "Leo Tolstoy",
+        "country": "Russia",
+        "imageLink": "images/anna-karenina.jpg",
+        "language": "Russian",
+        "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
+        "pages": 864,
+        "title": "Anna Karenina",
+        "year": 1877,
+        "uuid": "d90234a6-cf63-4032-8651-ffce531aa424",
+        "last_read_page": 0,
+        "percentage_read": 0.0,
+        "last_read_date": 0.0
+    }
+]
