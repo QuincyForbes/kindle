@@ -115,3 +115,5 @@ http://localhost:5000/
   - `uuid`: Unique identifier of the book.
   - `page_number`: The page number to update.
 - **Description**: Updates the last read page number for a specific book in the user's library.
+
+- 
