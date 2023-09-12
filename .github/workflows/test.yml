@@ -3,7 +3,7 @@ name: Run Unit Tests
 on: [push, pull_request]
 
 jobs:
-  setup-environment:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,28 +20,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-  start-server:
-    needs: setup-environment
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Start REST Server
         run: |
           python main.py &
 
       - name: Wait for REST Server to start
-        run: sleep 10 # Wait for 10 seconds
-
-  run-tests:
-    needs: start-server
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+        run: sleep 10
 
       - name: Run tests
         run: |
