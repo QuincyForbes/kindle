@@ -18,19 +18,19 @@ class BookRoutesTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_search_book_global(self):
-        response = self.client.get("/global/books/search/title/HarryPotter")
+        response = self.client.get("/global/books/search/title/Oedipus the King")
         self.assertEqual(response.status_code, 200)
 
     def test_search_book_global_with_target(self):
-        response = self.client.get("/global/books/search/title/HarryPotter/author")
+        response = self.client.get("/global/books/search/title/Oedipus the King/author")
         self.assertEqual(response.status_code, 200)
 
     def test_search_book_user(self):
-        response = self.client.get("/user/books/search/title/HarryPotter")
+        response = self.client.get("/user/books/search/title/Oedipus the King")
         self.assertEqual(response.status_code, 200)
 
     def test_search_book_user_with_target(self):
-        response = self.client.get("/user/books/search/title/HarryPotter/author")
+        response = self.client.get("/user/books/search/title/Oedipus the King/author")
         self.assertEqual(response.status_code, 200)
 
     def test_get_last_user_book(self):
