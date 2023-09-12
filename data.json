@@ -1272,5 +1272,47 @@
         "last_read_page": 0,
         "percentage_read": 0.0,
         "last_read_date": 0.0
+    },
+    {
+        "author": "Test",
+        "country": "Test",
+        "imageLink": "Test",
+        "language": "Test",
+        "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
+        "pages": 864,
+        "title": "Anna Karenina",
+        "year": 1877,
+        "uuid": "998a59f9-fb03-4981-8c88-038812fae648",
+        "last_read_page": 0,
+        "percentage_read": 0.0,
+        "last_read_date": 0.0
+    },
+    {
+        "author": "Test",
+        "country": "Test",
+        "imageLink": "Test",
+        "language": "Test",
+        "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
+        "pages": 864,
+        "title": "Anna Karenina",
+        "year": 1877,
+        "uuid": "bed40f29-d860-4f67-954a-cdbde27a8953",
+        "last_read_page": 0,
+        "percentage_read": 0.0,
+        "last_read_date": 0.0
+    },
+    {
+        "author": "Test",
+        "country": "Test",
+        "imageLink": "Test",
+        "language": "Test",
+        "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
+        "pages": 864,
+        "title": "Anna Karenina",
+        "year": 1877,
+        "uuid": "c501d4b5-cf77-4610-b92b-16f6a3f24c4c",
+        "last_read_page": 0,
+        "percentage_read": 0.0,
+        "last_read_date": 0.0
     }
 ]

@@ -33,12 +33,15 @@ class BookRoutesTestCase(unittest.TestCase):
         response = self.client.get("/user/books/search/title/HarryPotter/author")
         self.assertEqual(response.status_code, 200)
 
+    def test_get_last_user_book(self):
+        response = self.client.put("/user/books/last_read")
+        self.assertEqual(response.status_code, 200)
+
     def test_add_book_to_user_library(self):
         response = self.client.put("/user/books/82f0ea02-de55-4b2c-abd0-171395b69193")
         self.assertEqual(response.status_code, 200)
 
     def test_add_book_to_global_library(self):
-        # Assuming a book structure for testing
         mock_data = {
             "author": "Test",
             "country": "Test",
