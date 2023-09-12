@@ -2,11 +2,9 @@ from flask import Flask
 from app.routes import routes
 
 
-def start():
-    # Initialize the Flask app
+def Start():
     app = Flask(__name__)
 
-    # Register routes
     routes.register_routes(app)
 
     from waitress import serve
