@@ -116,3 +116,8 @@ http://localhost:5000/
   - `page_number`: The page number to update.
 - **Description**: Updates the last read page number for a specific book in the user's library.
 
+#### 10. Get the last read book from the User Library:
+
+- **URL**: `/user/books/last_read`
+- **Method**: `GET`
+- **Description**: Gets the last read book in the user's library.
