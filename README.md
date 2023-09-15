@@ -9,9 +9,9 @@ http://localhost:5000/
 
 ### Setup:
 #### Docker Images:
-https://github.com/QuincyForbes/oto-takehometest-kindle/pkgs/container/oto-takehometest-kindle
+https://github.com/QuincyForbes/kindle/pkgs/container/oto-takehometest-kindle
 ```
-docker pull ghcr.io/quincyforbes/oto-takehometest-kindle:sha-0470638
+docker pull ghcr.io/quincyforbes/kindle:sha-eb64a29
 docker run --name otokindle -d -p 5000:5000 ghcr.io/quincyforbes/oto-takehometest-kindle:sha-697b3b6
 ```
 
