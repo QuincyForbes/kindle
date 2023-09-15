@@ -12,7 +12,7 @@ http://localhost:5000/
 https://github.com/QuincyForbes/kindle/pkgs/container/oto-takehometest-kindle
 ```
 docker pull ghcr.io/quincyforbes/kindle:sha-eb64a29
-docker run --name otokindle -d -p 5000:5000 ghcr.io/quincyforbes/oto-takehometest-kindle:sha-697b3b6
+docker run --name kindle -d -p 5000:5000 ghcr.io/quincyforbes/kindle:sha-697b3b6
 ```
 
 ### Endpoints:
