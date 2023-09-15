@@ -7,6 +7,14 @@ This API is designed for managing books in a Kindle application. The API allows 
 Local Server:
 http://localhost:5000/
 
+### Setup:
+#### Docker Images:
+https://github.com/QuincyForbes/oto-takehometest-kindle/pkgs/container/oto-takehometest-kindle
+```
+docker pull ghcr.io/quincyforbes/oto-takehometest-kindle:sha-0470638
+docker run --name otokindle -d -p 5000:5000 ghcr.io/quincyforbes/oto-takehometest-kindle:sha-697b3b6
+```
+
 ### Endpoints:
 
 #### Keys:
@@ -14,16 +22,11 @@ http://localhost:5000/
 ```
 "pages",
 "year",
-"last_read_page",
-"percentage_read",
-"last_read_date",
-"author",
-"country",
-"imageLink",
-"language",
-"link",
 "title",
-"uuid"
+"author",
+"uuid",
+"genre",
+"last_read_date",
 ```
 
 #### 1. Get all books from the User Library:
@@ -61,7 +64,7 @@ http://localhost:5000/
 #### 5. Add a book to the User Library:
 
 - **URL**: `/user/books/<uuid>`
-- **Method**: `PUT`
+- **Method**: `POST`
 - **Parameters**:
   - `uuid`: Unique identifier of the book.
 - **Description**: Adds a book from the global library to the user's library using the provided UUID.
@@ -69,24 +72,26 @@ http://localhost:5000/
 #### 6. Add a book to the Global Library:
 
 - **URL**: `/global/books`
-- **Method**: `PUT`
+- **Method**: `POST`
 - **Parameters**:
   - `data` (Request Body): JSON object containing book details.
 
 ```
+
 {
-  "author": "Leo Tolstoy",
-  "country": "Russia",
-  "imageLink": "images/anna-karenina.jpg",
-  "language": "Russian",
-  "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
-  "pages": 864,
-  "title": "Anna Karenina",
-  "year": 1877,
-  "last_read_page": 0,
-  "percentage_read": 0.0,
-  "last_read_date": 0.0
+"author": "Leo Tolstoy",
+"country": "Russia",
+"imageLink": "images/anna-karenina.jpg",
+"language": "Russian",
+"link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
+"pages": 864,
+"title": "Anna Karenina",
+"year": 1877,
+"last_read_page": 0,
+"percentage_read": 0.0,
+"last_read_date": 0.0
 }
+
 ```
 
 - **Description**: Adds a new book to the global library.
@@ -110,7 +115,7 @@ http://localhost:5000/
 #### 9. Update the last read page of a book in the User Library:
 
 - **URL**: `/user/books/<uuid>/page/<page_number>`
-- **Method**: `POST`
+- **Method**: `PATCH`
 - **Parameters**:
   - `uuid`: Unique identifier of the book.
   - `page_number`: The page number to update.
