@@ -9,7 +9,7 @@ http://localhost:5000/
 
 ### Setup:
 #### Docker Images:
-https://github.com/QuincyForbes/kindle/pkgs/container/oto-takehometest-kindle
+https://github.com/QuincyForbes/kindle/pkgs/container/kindle
 ```
 docker pull ghcr.io/quincyforbes/kindle:sha-eb64a29
 docker run --name kindle -d -p 5000:5000 ghcr.io/quincyforbes/kindle:sha-eb64a29
